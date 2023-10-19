@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Conversor de temperaturas</h1>
+
+    <!--botões com as temperaturas-->
+    <button onclick= "celsius()"> Converter para Celcius </button>
+    <button onclick= "fahren()"> Converter para Fahrenheit </button>
+    <button onclick = "limpar ()"> Limpar tudo</button>
+
+    <div id = "saida"></div>
+
+    <script>
+        var resultado = Number
+
+        //funções dos botões
+        function celsius(){
+            let fahren = parseFloat(prompt("Digite a temperatura em graus Fahrenheit:"))
+            resultado = (fahren - 32) / 1.8
+            document.querySelector('#saida').innerHTML = (`${resultado.toFixed(1)} °C`);
+        }
+
+        function fahren(){
+            let celsius = parseFloat(prompt("Digite a temperatura em graus Celsius:"))
+            resultado = (celsius * 1.8) + 32
+            document.querySelector('#saida').innerHTML = (`${resultado.toFixed(1)} °F`);
+        }
+
+        function limpar(){
+            window.location.reload()
+        }
+
+    </script>
+</body>
+</html>

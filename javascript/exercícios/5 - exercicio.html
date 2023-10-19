@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+</head>
+<body>
+    <h1>Jogo</h1>
+    <script>
+        //digitando os números
+        var j1 = parseInt(prompt("Jogador 1, digite um número: "))
+        var j2 = parseInt(prompt("Jogador 2, digite um número: "))
+        
+        //condições
+        //se forem iguais
+        if(j1 == j2) {
+            alert("Empate!")
+
+        } else { // se não forem iguais
+            //sortear um valor entre 1 e 0
+            var ran = parseInt(Math.random()*2)
+
+            if(ran == 0 && j1 < j2 || ran == 1 && j1 > j2) {
+                    alert (`O número sorteado foi: ${ran}. O ganhador foi o JOGADOR 1!`)
+                    
+                } else {
+                    alert(`O número sorteado foi: ${ran}. O ganhador foi o JOGADOR 2!`)
+                }
+            }  
+
+    </script>
+</body>
+</html>

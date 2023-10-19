@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <h1>Calculo de notas e faltas</h1>
+    <script>
+        //pedir as notas
+        var n1 = parseFloat(prompt("Digite a primeira nota: "))
+        var n2 = parseFloat(prompt("Digite a segunda nota: "))
+        var n3 = parseFloat(prompt("Digite a terceira nota: "))
+        var n4 = parseFloat(prompt("Digite a quarta nota: "))
+
+        //pedir as faltas
+        var f1 = parseInt(prompt("Digite as faltas do 1º bimestre: "))
+        var f2 = parseInt(prompt("Digite as faltas do 2º bimestre: "))
+        var f3 = parseInt(prompt("Digite as faltas do 3º bimestre: "))
+        var f4 = parseInt(prompt("Digite as faltas do 4º bimestre: "))
+
+        //calculo da média das notas
+        var media = (n1 + n2 + n3 + n4)/4
+        //calculo do total de faltas
+        var faltas = f1 + f2 + f3 + f4
+        
+       
+
+        //verificar se a média é maior que 7 e as faltas é menor que 25%
+        if(media >= 7 && faltas <= (80 * (25/100))){
+            alert (`Sua média é ${media} e seu total de faltas é ${faltas} horas. Você está APROVADO.`)
+        }
+            else{
+                if(media < 7 && faltas < (80 * (25/100))){
+                alert (`Sua média é ${media} e seu total de faltas é ${faltas} horas. Você está de EXAME.`)
+                }
+                else{
+                if (faltas > (80 * (25/100))){
+                    alert(`Sua média é ${media} e seu total de faltas é ${faltas} horas. Você está REPROVADO.`)
+                }
+            
+            }
+            }
+            
+
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 11</title>
+</head>
+<body>
+    <h1> exercício 11 </h1>
+    <script>
+        var indice = 1;
+        var soma = 0;
+        var maximo = parseInt(prompt('DIGITE A QUANTIDADE MÁXIMA DE NÚMEROS SOMADOS:'))
+        while (indice <= maximo){
+            //repetir este bloco até a condição ser verdadeira
+            var valor = parseInt(prompt(`Digite o ${indice}° valor:`));
+            soma = (valor + soma);
+            indice++;
+        }
+
+        alert(`A soma dos valores é ${soma}!! :D`);
+    </script>
+</body>
+</html>

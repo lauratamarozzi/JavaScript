@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <!-- html -->
+    <button onclick = "soma()"> + </button>
+    <button onclick = "subt()"> - </button>
+    <button onclick = "mult()"> x </button>
+    <button onclick = "div ()"> ÷ </button>
+    <button onclick = "limpar ()"> Limpar tudo</button>
+
+    <div id = "saida"></div>
+
+    <!-- js -->
+    <script>
+        //pedir o valor inicial
+        let n1 = parseInt(prompt(""));
+        var resultado = Number;
+
+        //funções dos botões
+        function soma(){
+            let n2 = parseInt(prompt(""));
+            resultado = n1 + n2
+            let saida = document.querySelector('#saida');
+            let msg = '';
+            
+            msg += `${n1} + ${n2} = ${resultado} <br>` //output
+            
+            saida.innerHTML = msg;
+            n1 = resultado 
+        }
+
+        function subt(){
+            let n2 = parseInt(prompt(""));
+            resultado = n1 - n2
+            let saida = document.querySelector('#saida');
+            let msg = '';
+            
+            msg += `${n1} - ${n2} = ${resultado} <br>`
+            
+            saida.innerHTML = msg;
+            n1 = resultado
+        }
+
+        function mult(){
+            let n2 = parseInt(prompt(""));
+            resultado = n1 * n2
+            let saida = document.querySelector('#saida');
+            let msg = '';
+            
+            msg += `${n1} x ${n2} = ${resultado} <br>`
+            
+            saida.innerHTML = msg;
+            n1 = resultado
+        }
+
+        function div(){
+            let n2 = parseInt(prompt(""));
+            resultado = n1 / n2
+            let saida = document.querySelector('#saida');
+            let msg = '';
+            
+            msg += `${n1} ÷ ${n2} = ${resultado} <br>`
+            
+            saida.innerHTML = msg;
+            n1 = resultado
+        }
+
+        function limpar(){
+            window.location.reload()
+        }
+    </script>
+</body>
+</html>

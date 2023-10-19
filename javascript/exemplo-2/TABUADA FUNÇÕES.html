@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada até 1000</title>
+</head>
+<body>
+    <button onclick="gerarTabuada()"> Gerar tabuada </button>
+    <button onclick="limparTabuada()"> Limpar tabuada </button>
+    <div id = "saida"></div>
+
+    <script>
+        function gerarTabuada(){
+            let n = parseInt(prompt('Digite o número para a tabuada'));
+            let saida = document.querySelector('#saida');
+            
+            let mensagem = '';
+            for(var i = 1; i <= 100; i++){
+            mensagem += `${n} X ${i} = ${n*i}<br>`
+            }
+            saida.innerHTML = mensagem;
+        }        
+        function limparTabuada(){
+            mensagem = '';
+            saida.innerHTML = mensagem;
+        }
+
+    </script>
+</body>
+</html>

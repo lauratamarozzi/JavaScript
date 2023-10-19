@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Condicionais</h1>
+    <script>
+        //pedir a nota do 1º trim e transformar em int
+        var trim1 = parseFloat(prompt('Digite a nota do 1º trimestre: '))
+
+        //pedir a nota do 2º trim e transformar em int
+        var trim2 = parseFloat(prompt('Digite a nota do 2º trimestre: '))
+
+        //pedir a nota do 3º trim e transformar em int
+        var trim3 = parseFloat(prompt('Digite a nota do 3º trimestre: '))
+
+        //calcular a média
+        var media = (trim1 + trim2 + trim3)/3
+
+        //estrutura condicional de escolha (decisão)
+        if (media >= 7){
+            //fazer esse bloco caso a condição seja verdadeira
+            alert('Parabéns! Você foi aprovado com média: ' + media.toFixed(1) + '. Curta suas férias!')
+            
+        }else{
+            //fazer esse bloco caso a condição seja falsa
+            alert('Poxa, você ficou retido com média: '+ media.toFixed(1) + '. Nos vemos no próximo ano!')
+
+            //toFixed fixa as casas decimais
+            //mathRound arredonda
+
+        }
+    </script>
+</body>
+</html>

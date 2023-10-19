@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="saida"></div>
+
+    <script>
+        let total = parseFloat
+        total = 0
+        let a = 1
+        while(a!==0){
+        let num = new Array();
+        num.push(parseInt(prompt('Digite os números:')))
+            for (var i = 0; i < num.length; i++) {
+                if(num[i]==0){
+                a = 0
+                }else if (num[i]%2 == 0) {
+                total += num[i]
+                }
+            }
+        }
+        document.write(`SOMA: ${total}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO Array</title>
+</head>
+<body>
+    <script>
+        
+        const d = new Date();
+
+        let xHora = d.getHours();
+        let xDia = d.getDay();
+        let xDiadia = d.getDate();
+        let xMes = d.getMonth();
+        let xAno = d.getFullYear();
+
+        diaSem = new Array(7);
+        diaSem[0] = "Domingo";
+        diaSem[1] = "Segunda-feira";
+        diaSem[2] = "Terça-feira";
+        diaSem[3] = "Quarta-feira";
+        diaSem[4] = "Quinta-feira";
+        diaSem[5] = "Sexta-feira";
+        diaSem[6] = "Sábado";
+
+        mes = new Array(11);
+        mes[0] = "Jan";
+        mes[1] = "Fev";
+        mes[2] = "Mar";
+        mes[3] = "Abr";
+        mes[4] = "Mai";
+        mes[5] = "Jun";
+        mes[6] = "Jul";
+        mes[7] = "Ago";
+        mes[8] = "Set";
+        mes[9] = "Out";
+        mes[10] = "Nov";
+        mes[11] = "Dez";
+
+        if (xHora>= 1 && xHora<=12) {
+            sau = 'BOM DIA'
+        }else{
+            if(xHora>=13 && xHora<=18) {
+                sau = 'BOA TARDE'
+            }else{
+                sau = 'BOA NOITE'
+            }
+        }
+
+        alert(`Olá ${sau}! Hoje é ${diaSem[xDia]}, ${xDiadia} de ${mes[xMes]} de ${xAno}`);
+    </script>
+</body>
+</html>

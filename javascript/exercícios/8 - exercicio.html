@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de repetição</title>
+</head>
+<body>
+    <h1>Exercício de repetição</h1>
+    <script>
+        //perguntar o numero de inicio e o numero de fim
+        var n1 = parseInt(prompt("Digite o número de início: "))
+        var n2 = parseInt(prompt("Digite o número de fim: "))
+
+        //usar a estrutura de repetição
+        //2**2 = 2 elevado ao quadrado
+        for(let n = n1; n <= n2; n++){
+            if(n % 2 == 0){
+                document.write(`O quadrado de ${n} é ${n**2}. <br>`)
+            }
+        }
+    </script>
+</body>
+</html>

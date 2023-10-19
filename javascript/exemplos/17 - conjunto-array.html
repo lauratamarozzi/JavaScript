@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar produtos</title>
+</head>
+<body>
+    <h1>Array - mostrar produtos</h1>
+
+    <div id = "saida"></div>
+
+    <script>
+        let produtos = new Array('lápis', 'borracha', 'caderno', 'estojo', 'caneta', 'régua');
+
+        produtos.push('papel A4', 'cartolina', 'papel carbono')
+
+        let saida = document.querySelector('#saida')
+        let msg = ''
+
+        for(var i = 0; i < produtos.length; i++){
+            msg += (`Produto ${i+1}: ${produtos[i]} <br>`)
+        }
+
+        saida.innerHTML = msg
+
+    </script>
+</body>
+</html>

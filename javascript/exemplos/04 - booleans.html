@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True or false</title>
+</head>
+<body>
+    <h1>True or false</h1>
+    <script>
+        //pedir os valores
+        var v1 = parseFloat(prompt('Digite o primeiro valor: '))
+        var v2 = parseFloat(prompt('Digite o segundo valor: '))
+
+        //calculo da média
+        var media = (v1+v2)/2
+
+        //trazer o resultado
+        //template literals
+        alert(`O valor da média, que é ${media}, é maior que 5? ${(media > 5)}`) 
+
+        //concatenando
+        alert('O valor da média, que é ' +media+ ', é maior que 5? '+ (media > 5))
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //alert bom dia
+       const d = new Date()
+       //data
+       let hora = d.getHours()
+       let dia = d.getDate()
+       let mes = d.getMonth()
+       let ano = d.getFullYear()
+       var semana = String
+       var saudacao = String
+       //switch HORA
+       switch (hora) {
+        case (1-12):
+            saudacao = ('BOM DIA')
+            break;
+        case (13-18):
+            saudacao = ('BOA TARDE')
+            break;
+        case (19-0):
+            saudacao = ('BOA NOITE')
+            break;
+        default:
+            break;
+       }
+       //switch DIA
+       switch (dia) {
+            case 0:
+                semana = domingo;
+                break;
+            case 1:
+                semana = segunda;
+                break;
+            case 2:
+                semana = terça;
+                break;
+            case 3:
+                semana = quarta;
+                break;
+            case 4:
+                semana = quinta;
+                break;
+            case 5:
+                semana = sexta;
+                break;
+            case 6:
+                semana = sabado;
+                break;
+            default:
+                break;
+       }
+        //alert
+        alert(`Olá, ${saudacao}! Hoje é ${semana},`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERADORES LÓGICOS</title>
+</head>
+
+<body>
+    <h1>OPERADORES LÓGICOS</h1>
+    <script>
+        //digite 4 notas e as faltas
+        var N1 = parseFloat(prompt("Digite 1° nota: "));
+
+        var N2 = parseFloat(prompt("Digite 2° nota: "));
+
+        var N3 = parseFloat(prompt("Digite 3° nota: "));
+
+        var N4 = parseFloat(prompt("Digite 4° nota: "));
+
+        var F = parseInt(prompt("Digite sua quatidade FALTAS:"));
+
+        //media
+        var media = (N1 + N2 + N3 + N4) / 4;
+
+        if (media >= 7 && F <= (80 * (25 / 100))) {
+            alert(`Você está APROVADO! Sua média foi: ${media}, parabéns!`);
+        } else {
+            if (media < 7 && F <= (80 * (25 / 100))) {
+                alert(`Você esta em RECUPERAÇÃO, pois sua media foi: ${media}, mas suas faltas foram abaixo de 20, sendo ${F}.`);
+            } else {
+                if (media > 7) {
+                    alert(`Você está REPROVADO pois sua média foi ${media} mas suas faltas foram acima de 25% (20 faltas), sendo a sua ${F} faltas.`);
+                } else {
+                    alert(`Você está REPROVADO pois sua média foi ${media} e suas faltas foram acima de 25% (20 faltas), sendo a sua ${F} faltas.`);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício array</title>
+</head>
+<body>
+    <h1>Conjunto de array</h1>
+
+    <div id = 'saida'></div>
+
+    <script>
+        let soma = parseFloat
+        soma = 0
+
+        let numeros = new Array(2, 3, 4, 12, 5, 20, 15)
+
+        let saida = document.querySelector('#saida')
+        let msg = ''
+
+        for(var i = 0; i < numeros.length; i++){
+            
+            if(numeros[i] % 2 == 0){
+                soma += numeros[i]
+        }
+        
+    }
+        msg += (`A soma dos pares é: ${soma} <br>`)
+    
+    saida.innerHTML = msg
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let quantidade = parseInt
+    let pagar = parseFloat
+    let c = String
+    let i = 1
+    pagar = 0
+    while(i!==0){
+
+    let cod = parseInt(prompt(`Insira o código:`))
+
+        if (cod == 100){
+        quantidade = prompt(`Quantidade:`)
+        pagar += quantidade*10.90
+
+        }else if (cod == 101){
+        quantidade = prompt(`Quantidade:`)
+        pagar += quantidade*8.90
+
+        }else if (cod == 102){
+        quantidade = prompt(`Quantidade:`)
+        pagar += quantidade*14.90
+
+        }else if (cod == 103){
+        quantidade = prompt(`Quantidade:`)
+        pagar += quantidade*13.90
+
+        }else if (cod == 104){
+        quantidade = prompt(`Quantidade:`)
+        pagar += quantidade*16.90
+
+        }else if (cod == 105){
+        quantidade = prompt(`Quantidade:`)
+        pagar += quantidade*22.90
+
+        }else if (cod == 106){
+        quantidade = prompt(`Quantidade:`)
+        pagar += quantidade*4.90
+
+        }else if (cod == 0){
+        i = 0
+        }
+    }
+    document.write(`TOTAL = R$ ${pagar.toFixed(2)}`)
+</script>
+</body>
+</html>

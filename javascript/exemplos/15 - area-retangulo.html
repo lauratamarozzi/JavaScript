@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular área de um retângulo</title>
+</head>
+<body>
+    <h1>Funções que recebem valores - parâmetro</h1>
+
+    <!-- botão para calcular a área-->
+    <button onclick="calcularArea(lar, alt)"> Calcular a área </button>
+
+    <script>
+        //pedir o valor da largura
+        let lar = parseFloat(prompt('Qual a medida da largura?'))
+        //pedir o valor da altura
+        let alt = parseFloat(prompt('Qual a medida da altura'))
+
+        //função para calcular
+        function calcularArea(l, a){
+            alert(`A área do retângulo é: ${l*a}`)
+        }
+    </script>
+    
+</body>
+</html>

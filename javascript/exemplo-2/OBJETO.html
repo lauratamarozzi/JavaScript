@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="saida"></div>
+
+    <script>
+        var quantidade = parseInt
+        var produto1 = new Object();
+        //uma PROPRIEDADE é uma variável atrelada ao objeto 
+        produto1.nome = 'caneta';
+        produto1.preco = 5.5;
+        produto1.estoque = 10;
+        //UMA VARIÁVEL COM VÁRIAS VARIAVEIS DENTRO, o nome depois do PONTO, é uma PROPRIEDADE
+        produto1.comprar = function(quantidade) {
+            console.log('comprou caneta');
+            this.estoque-= quantidade||1;
+            console.log(produto1.estoque);
+        }
+        var mensagem = '';
+        mensagem += `Nome: ${produto1.nome}<br>Preço: ${produto1.preco}<br>Estoque: ${produto1.estoque}<br>`
+        document.querySelector('#saida').innerHTML = mensagem;
+
+    </script>
+</body>
+
+</html>

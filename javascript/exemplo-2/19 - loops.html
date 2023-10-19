@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+</head>
+<body>
+    <h1>Loteria - loops</h1>
+
+    <button onclick = "limpar ()"> Reiniciar </button>
+    <button onclick= "aparecer()">Sortear</button>
+    <div id = 'saida'></div>
+    <script>
+
+        let mensagem = ''
+        function sortear(){
+            // retorno de valor
+            return Math.floor(Math.random()*60)
+        }
+        let sorteados = [];
+
+        while(sorteados.length < 6){
+            let sorteado = sortear()
+
+            if (sorteados.indexOf (sortear) === -1) { //quando o valor e o tipo são iguais
+                sorteados [sorteados.length] = sorteado
+            }
+        }
+        function aparecer() {
+            for(let i = 0; i < sorteados.length; i++){
+                mensagem += `${sorteados[i]}<hr>`
+            }
+            document.querySelector('#saida').innerHTML = mensagem;
+        }
+        console.log(sorteados.length, sorteados)
+
+        function limpar(){
+            window.location.reload()
+        }
+
+
+    </script>
+</body>
+</html>

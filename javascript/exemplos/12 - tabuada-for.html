@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada até 1000</title>
+</head>
+<body>
+     <h1>Estrutura de repetição - FOR</h1>
+    <script>
+        //pedir um número e transformar em number
+        let num = parseInt(prompt("Digite um número para a tabuada: "))
+
+        //repetir até a condição for verdadeira - neste caso até 1000 -
+        for (var indice = 1; indice <= 1000; indice++){     //var inicial; condição; incremento
+            document.write(`A tabuada de ${num} x ${indice} = ${num*indice} <br>`)
+        }
+
+        document.write('Saiu do looping.')
+    </script>
+</body>
+</html>

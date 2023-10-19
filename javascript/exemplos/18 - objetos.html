@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>Objetos</h1>
+    <div id="saida"></div>
+
+    <script>
+        let saida = document.querySelector('#saida')
+        
+        var prod1 = new Object();
+        prod1.nome = 'caneta';
+        prod1.preco = 5.5;
+        prod1.estoque = 10;
+        //obs 1 - uma propriedade nada mais é que uma variável atrelada ao objeto
+        //obs 2 - método nada mais é que uma função atrelada ao objeto
+
+        prod1.comprar = function(qtd){
+            console.log('comprou caneta');
+            this.estoque-= qtd || 1;
+            console.log(this.estoque);
+        }
+
+        var msg = '';
+        msg += (`Nome: ${prod1.nome}<br> Preço: R$ ${prod1.preco}<br> Estoque: ${prod1.estoque}`);
+
+        saida.innerHTML = msg
+    </script>
+</body>
+</html>

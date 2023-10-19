@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Estrutura de arrays</h1>
+    <script>
+        //determinar a data
+        const d = new Date();
+
+        //variaveis das datas e hora
+        let hora = d.getHours();    // 0 à 23
+        let dia = d.getDay();   //1 à 31
+        let mes = d.getMonth(); // 0 à 11
+        let ano = d.getFullYear();  //lê o ano em YYYY
+
+        diaSem = new Array(7);
+        diaSem[0] = "domingo";
+        diaSem[1] = "segunda-feira";
+        diaSem[2] = "terça-feira";
+        diaSem[3] = "quarta-feira";
+        diaSem[4] = "quinta-feira";
+        diaSem[5] = "sexta-feira";
+        diaSem[6] = "sábado";
+
+        alert(diaSem[dia]);
+
+
+    </script>
+</body>
+</html>

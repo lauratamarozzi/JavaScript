@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="saida"></div>
+
+<script>
+
+    let quantidade = parseInt
+    let produto = parseFloat
+    let pagar = parseFloat
+    let c = String
+    pagar = 0
+    let cod = parseInt(prompt(`Digite o código:`))
+
+    while (cod == 0){
+        if (cod == 100){
+                quantidade = prompt(`Quantidade:`)
+                c = ('Cachorro Quente')
+                produto = 10.90
+                pagar = (pagar+(quantidade*produto))
+                document.write(`PRODUTO: ${c} <br> VALOR: ${produto} <br> TOTAL: ${pagar}`)
+        }
+
+    }
+        switch(cod){
+            case 100:
+                
+                break;
+
+            case 101:
+                quantidade = prompt(`Quantidade:`)
+                c = ('Misto Quente')
+                produto = 8.90
+                pagar = (pagar+(quantidade*produto))
+                document.write(`PRODUTO: ${c} <br> VALOR: ${produto} <br> TOTAL: ${pagar}`)
+                break;
+            case 102:
+                quantidade = prompt(`Quantidade:`)
+                c = ('X-Salada')
+                produto = 14.90 
+                pagar = (pagar+(quantidade*produto))
+                document.write(`PRODUTO: ${c} <br> VALOR: ${produto} <br> TOTAL: ${pagar}`)
+                break;
+            case 103:
+                quantidade = prompt(`Quantidade:`)
+                c = ('X-Burger')
+                produto = 13.90 
+                pagar = (pagar+(quantidade*produto))
+                document.write(`PRODUTO: ${c} <br> VALOR: ${produto} <br> TOTAL: ${pagar}`)
+                break;
+            case 104:
+                quantidade = prompt(`Quantidade:`)
+                c = ('X-Egg')
+                produto = 16.90 
+                pagar = (pagar+(quantidade*produto))
+                document.write(`PRODUTO: ${c} <br> VALOR: ${produto} <br> TOTAL: ${pagar}`)
+                break;
+            case 105:
+                quantidade = prompt(`Quantidade:`)
+                c = ('X-Bagunça')
+                produto = 22.90 
+                pagar = (pagar+(quantidade*produto))
+                document.write(`PRODUTO: ${c} <br> VALOR: ${produto} <br> TOTAL: ${pagar}`)
+                break;
+            case 106:
+                quantidade = prompt(`Quantidade:`)
+                c = ('Refrigerante')
+                produto = 4.90 
+                pagar = (pagar+(quantidade*produto))
+                document.write(`PRODUTO: ${c} <br> VALOR: ${produto} <br> TOTAL: ${pagar}`)
+                break;
+            case 0:
+                break;
+            default:
+                alert(`Insira um código! >:(`)
+                break;
+        }
+</script>
+</body>
+</html>

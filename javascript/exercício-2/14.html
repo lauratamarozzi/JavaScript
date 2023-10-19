@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1> Calculadora </h1>
+    <button onClick="calcular('+')">+</button>
+    <button onClick="calcular('-')">-</button>
+    <button onclick="calcular('/')">/</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="limparC('limpar')">limpar</button>
+    <div id = "saida"></div>
+    <script>
+    let a = parseFloat(prompt(''))
+    let saida = document.querySelector('#saida'); //variavel pra ppode escrever no site a mensagem
+    saida.innerHTML = n
+    function calcular(calcular){  //dentro do parenteses é o parametro
+        
+        switch (calcular){
+            case '+':
+                {
+                let b = parseFloat(prompt(''));
+                a+=b
+                saida.innerHTML = a
+                break;
+                }
+            case '-':
+                {
+                let b = parseFloat(prompt(''));
+                a-=b
+                saida.innerHTML = a
+                break;
+                }
+            case '*':
+                {
+                let b = parseFloat(prompt(''));
+                a*=b
+                saida.innerHTML = a
+                break;
+                }
+            case '/':
+                {
+                let b = parseFloat(prompt(''));
+                a/=b
+                saida.innerHTML = a
+                break;
+                }
+            default:
+                alert(`ESCOLHA UMA OPERAÇÃO >:(`)
+                break;
+        }
+    }
+        function limparC(){
+           window.location.reload(true)
+        }
+    </script>
+</body>
+</html>

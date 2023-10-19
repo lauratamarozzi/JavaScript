@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1> Calculadora </h1>
+    <button onClick="soma()"> + </button>
+    <button onClick="subtracao()"> - </button>
+    <button onclick="divisao()"> / </button>
+    <button onclick="multiplicacao()"> * </button>
+    <button onclick="limparC()"> limpar </button>
+    <div id = "saida"></div>
+    <script>
+        
+        let a = parseFloat
+
+        function soma(){
+
+            let b = parseFloat(prompt(''));
+            let saida = document.querySelector('#saida'); //variavel pra ppode escrever no site a mensagem
+            let mensagem = ''
+            mensagem += `${a} + ${b} = ${a+b}<br>`
+            
+            saida.innerHTML = mensagem;
+            a = a + b
+        }
+        function subtracao(){
+
+            let b = parseFloat(prompt(''));
+            let saida = document.querySelector('#saida'); //variavel pra ppode escrever no site a mensagem
+            let mensagem = ''
+            mensagem += `${a} - ${b} = ${a-b}<br>`
+
+            saida.innerHTML = mensagem;
+            a = a - b
+        }
+        function divisao(){
+
+            let b = parseFloat(prompt(''));
+            let saida = document.querySelector('#saida'); //variavel pra ppode escrever no site a mensagem
+            let mensagem = ''
+            mensagem += `${a} ÷ ${b} = ${a/b}<br>`
+
+            saida.innerHTML = mensagem;
+            a = a / b
+        }
+        function multiplicacao(){
+
+            let b = parseFloat(prompt(''));
+            let saida = document.querySelector('#saida'); //variavel pra ppode escrever no site a mensagem
+            let mensagem = ''
+            mensagem += `${a} x ${b} = ${a*b}<br>`
+
+            saida.innerHTML = mensagem;
+            a = a * b
+
+        }
+        function limparC(){
+           window.location.reload(true)
+        }
+    </script>
+</body>
+</html>

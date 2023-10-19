@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+     <h1>Exercício 1</h1>
+    <script>
+        //pedir um número e transformar em number
+        let n = parseInt(prompt("Digite um número para a tabuada: "))
+
+        for (var i = 1; i <= 1000; i++){
+            document.write(`A tabuada de ${n} x ${i} = ${n*i} <br>`)
+            if(i%10==0){
+                document.write('<hr>')
+            }
+        }
+    </script>
+</body>
+</html>

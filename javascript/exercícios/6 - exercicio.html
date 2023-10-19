@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Estrutura de arrays</h1>
+    <script>
+        //determinar a data
+        const d = new Date();
+
+        //variaveis das datas e hora
+        let xhora = d.getHours();    // 0 à 23
+        let diames = d.getDate();   //0 `31
+        let xdia = d.getDay();   //0 à 6
+        let xmes = d.getMonth(); // 0 à 11
+        let xano = d.getFullYear();  //lê o ano em YYYY
+
+        diaSem = new Array(7);
+        diaSem[0] = "domingo";
+        diaSem[1] = "segunda-feira";
+        diaSem[2] = "terça-feira";
+        diaSem[3] = "quarta-feira";
+        diaSem[4] = "quinta-feira";
+        diaSem[5] = "sexta-feira";
+        diaSem[6] = "sábado";
+
+        mes = new Array(12);
+        mes[0] = "janeiro";
+        mes[1] = "fevereiro";
+        mes[2] = "março";
+        mes[3] = "abril";
+        mes[4] = "maio";
+        mes[5] = "junho";
+        mes[6] = "julho";
+        mes[7] = "agosto";
+        mes[8] = "setembro";
+        mes[9] = "outubro";
+        mes[10] = "novembro";
+        mes[11] = "dezembro";
+
+        if (xhora >= 4 && xhora <= 12){
+            alert(`Bom dia! Hoje é ${diaSem[xdia]}, dia ${diames} de ${mes[xmes]} de ${xano}. `)
+
+         } else if (xhora >= 13 && xhora < 19){
+            alert(`Boa tarde! Hoje é ${diaSem[xdia]}, dia ${diames} de ${mes[xmes]} de ${xano}.`)
+
+         } else{
+            alert(`Boa noite! Hoje é ${diaSem[xdia]}, dia ${diames} de ${mes[xmes]} de ${xano}.`)
+         }
+
+    </script>
+</body>
+</html>

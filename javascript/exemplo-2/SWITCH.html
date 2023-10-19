@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWITCH</title>
+</head>
+<body>
+    <h1> switch </h1>
+    <script>
+        //digitar um valor de 1 a 4
+        let n1 = parseInt(prompt("Digite um número de 1 a 4: ")); //let não permite que a variável tenha seu tipo  alterado depois
+
+        //mostrar uma saudação
+        switch (n1) {
+            case 1: //caso o n° escolhido seja 1
+                alert(`Olá N° 1! Seja bem vindo!`)
+                break;
+            case 2:
+                alert(`Olá N° 2! Seja bem vindo!`)
+                break;
+            case 3:
+                alert(`Olá N° 3! Seja bem vindo!`)
+                break;
+            case 4:
+                alert(`Olá N° 4! Seja bem vindo!`)
+                break;
+            default:
+                alert(`ESCOLHA UM NÚMERO! >:(`)
+                break;
+        }
+
+    </script>
+</body>
+</html>

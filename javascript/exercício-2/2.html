@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //pedir 3 notas
+        var N1 = parseFloat(prompt("Digite sua 1° nota: "));
+        var N2 = parseFloat(prompt("Digite sua 2° nota: "));
+        var N3 = parseFloat(prompt("Digite sua 3° nota: "));
+        //MEDIA
+        var media = (N1 + N2 + N3) / 3
+        //PASSOU?
+        if (media >= 6) {
+            //fazer isso aqui caso a condição seja VERDADEIRA
+            alert(`Sua média foi ${media.toFixed(0)}, portanto você está APROVADO! Parabéns! :)`);
+        } else {
+            //caso FALSA, FAZER ISSO if mediaNota >= 6
+            alert(`Sua média foir ${media.toFixed(0)}, e o mínimo era 6, portanto você foi REPROVADO! Nos vemos ano que vem XD.`)
+            //este .toFixed(tanto de casas decimais que vc deseja), é para ter somente o tanto de casas decimais que vc quer.
+        }
+    </script>
+
+</body>
+
+</html>

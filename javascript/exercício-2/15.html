@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="saida"></div>
+
+    <script>
+
+        let num = new Array(1,6,9,8,4);
+        let soma = parseFloat
+        soma = 0
+        var saida = document.querySelector('#saida')
+        for (var i = 0; i < num.length; i++) {
+            if (num[i] % 2 == 0) {
+                soma += num[i]
+            }
+        }
+        document.write(`SOMA: ${soma}`)
+    </script>
+</body>
+
+</html>

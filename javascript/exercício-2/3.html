@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EXERCÍCIO JOGO </title>
+</head>
+
+<body>
+    <h1> GAME </h1>
+    <script>
+        //VARIAVEL PRA SORTEIO
+        var random;
+        random = parseInt(Math.random() * 2);
+
+        //NUMERO DO PRIMEIRO JOGADOR
+        var J1 = parseInt(prompt("JOGADOR 1 - Digite seu número: "));
+
+        //NÚMERO DO SEGUNDO JOGADOR
+        var J2 = parseInt(prompt("JOGADOR 2 - Digite seu número: "));
+
+        //CONDIÇÕES
+        if (J1 == J2) {             //SE FOREM IGUAIS DA EMPATE
+            alert(`EMPATE!`);
+
+        } else {                    //MAS SE NÃO FOREM FAÇA OUTRA COMPARAÇÃO
+            if (random == 0) {      //SE NO SORTEIO DER 0, ESCOLHER O MENOR
+                if (J1 < J2) {      //J1 É O MENOR?
+                    alert(`O jogador 1 GANHOU! Pois o número sorteado foi ${random}`);//SIM
+                } else {            //MAS SE NÃO:
+                    alert(`O jogador 2 GANHOU! Pois o número sorteado foi ${random}`);
+                }
+
+            } else {                //SE O SORTEADO NÃO FOR 0, NO CASO É 1
+                if (J1 > J2) {      //JOGADOR 1 É MAIOR?
+                    alert(`O jogador 1 GANHOU! Pois o número sorteado foi ${random}`);  //SIM
+                } else {            //MAS SE NÃO:
+                    alert(`O jogador 2 GANHOU! Pois o número sorteado foi ${random}`);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function sortear(){
+        // retorno de valor
+        return Math.floor(Math.random()*60)
+        }
+        let sorteados = [];
+
+        // o for não seria a forma ideal do nosso loop
+        //for(let i = 0; i < 6; i++){
+          //  sorteados[i] = sortear();
+        //} 
+
+        while(sorteados.length < 6){
+            let sorteado = sortear()
+
+            if (sorteados.indexOf (sortear) === -1) { //quando o valor e o tipo são iguais
+                sorteados [sorteados.length] = sorteado
+            }
+        }
+        console.log(sorteados.length,sorteados)
+    </script>
+</body>
+</html>
